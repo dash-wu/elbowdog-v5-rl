@@ -1,0 +1,12 @@
+__pycache__/
+*.py[cod]
+.pytest_cache/
+*.egg-info/
+.ipynb_checkpoints/
+
+# Full training logs stay on the training machine (about 1.6 GB of intermediate checkpoints).
+# The best checkpoint, exported policy and videos are in best/v12/.
+logs/
+
+# Nested clones are vendored as plain source; do not commit their git metadata.
+third_party/**/.git

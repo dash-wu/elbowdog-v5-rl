@@ -1,0 +1,237 @@
+{
+  "source_urdf": "/home/dash/桌面/ElbowDog_V5_结构优化与三维仿真/v5/simulation/elbow_dog.urdf",
+  "bus_voltage": 24.0,
+  "motors": {
+    "GO-M8010-6": {
+      "peak_torque": 23.7,
+      "max_speed": 30.0
+    },
+    "IM6014": {
+      "peak_torque": 31.7,
+      "max_speed": 21.680000000000003
+    }
+  },
+  "armature": 0.01,
+  "foot_mass": 0.055,
+  "foot_radius": 0.016,
+  "foot_offset_in_calf": {
+    "FL": [
+      0.0,
+      0.026,
+      -0.15
+    ],
+    "FR": [
+      0.0,
+      -0.026,
+      -0.15
+    ],
+    "RL": [
+      0.0,
+      0.026,
+      -0.15
+    ],
+    "RR": [
+      0.0,
+      -0.026,
+      -0.15
+    ]
+  },
+  "total_mass": 13.215771358130937,
+  "link_masses": {
+    "base_link": 4.273990537445977,
+    "FL_hip": 0.90142138184054,
+    "FL_thigh": 0.9902616377307004,
+    "FL_calf": 0.2887621856,
+    "FL_foot": 0.055,
+    "FR_hip": 0.9014213818405393,
+    "FR_thigh": 0.9902616377307004,
+    "FR_calf": 0.2887621856,
+    "FR_foot": 0.055,
+    "RL_hip": 0.9014213818405399,
+    "RL_thigh": 0.9902616377307004,
+    "RL_calf": 0.2887621856,
+    "RL_foot": 0.055,
+    "RR_hip": 0.9014213818405398,
+    "RR_thigh": 0.9902616377307004,
+    "RR_calf": 0.2887621856,
+    "RR_foot": 0.055
+  },
+  "joints": [
+    {
+      "name": "FL_hip_joint",
+      "motor": "GO-M8010-6",
+      "lower": -0.35,
+      "upper": 0.35,
+      "effort": 23.7,
+      "velocity": 30.0
+    },
+    {
+      "name": "FL_thigh_joint",
+      "motor": "GO-M8010-6",
+      "lower": 0.1,
+      "upper": 1.4,
+      "effort": 23.7,
+      "velocity": 30.0
+    },
+    {
+      "name": "FL_calf_joint",
+      "motor": "IM6014",
+      "lower": -2.8,
+      "upper": -0.35,
+      "effort": 31.7,
+      "velocity": 21.68
+    },
+    {
+      "name": "FR_hip_joint",
+      "motor": "GO-M8010-6",
+      "lower": -0.35,
+      "upper": 0.35,
+      "effort": 23.7,
+      "velocity": 30.0
+    },
+    {
+      "name": "FR_thigh_joint",
+      "motor": "GO-M8010-6",
+      "lower": 0.1,
+      "upper": 1.4,
+      "effort": 23.7,
+      "velocity": 30.0
+    },
+    {
+      "name": "FR_calf_joint",
+      "motor": "IM6014",
+      "lower": -2.8,
+      "upper": -0.35,
+      "effort": 31.7,
+      "velocity": 21.68
+    },
+    {
+      "name": "RL_hip_joint",
+      "motor": "GO-M8010-6",
+      "lower": -0.35,
+      "upper": 0.35,
+      "effort": 23.7,
+      "velocity": 30.0
+    },
+    {
+      "name": "RL_thigh_joint",
+      "motor": "GO-M8010-6",
+      "lower": 0.1,
+      "upper": 1.4,
+      "effort": 23.7,
+      "velocity": 30.0
+    },
+    {
+      "name": "RL_calf_joint",
+      "motor": "IM6014",
+      "lower": -2.8,
+      "upper": -0.35,
+      "effort": 31.7,
+      "velocity": 21.68
+    },
+    {
+      "name": "RR_hip_joint",
+      "motor": "GO-M8010-6",
+      "lower": -0.35,
+      "upper": 0.35,
+      "effort": 23.7,
+      "velocity": 30.0
+    },
+    {
+      "name": "RR_thigh_joint",
+      "motor": "GO-M8010-6",
+      "lower": 0.1,
+      "upper": 1.4,
+      "effort": 23.7,
+      "velocity": 30.0
+    },
+    {
+      "name": "RR_calf_joint",
+      "motor": "IM6014",
+      "lower": -2.8,
+      "upper": -0.35,
+      "effort": 31.7,
+      "velocity": 21.68
+    }
+  ],
+  "base_collision_boxes": [
+    {
+      "name": "deck",
+      "center": [
+        0.0,
+        0.0,
+        0.05125
+      ],
+      "size": [
+        0.286,
+        0.19,
+        0.0105
+      ]
+    },
+    {
+      "name": "core",
+      "center": [
+        0.0,
+        0.0,
+        0.00625
+      ],
+      "size": [
+        0.266,
+        0.112,
+        0.0795
+      ]
+    },
+    {
+      "name": "FL_cleat",
+      "center": [
+        0.1257,
+        0.065,
+        0.00075
+      ],
+      "size": [
+        0.0146,
+        0.105,
+        0.1065
+      ]
+    },
+    {
+      "name": "FR_cleat",
+      "center": [
+        0.1257,
+        -0.065,
+        0.00075
+      ],
+      "size": [
+        0.0146,
+        0.105,
+        0.1065
+      ]
+    },
+    {
+      "name": "RL_cleat",
+      "center": [
+        -0.1257,
+        0.065,
+        0.00075
+      ],
+      "size": [
+        0.0146,
+        0.105,
+        0.1065
+      ]
+    },
+    {
+      "name": "RR_cleat",
+      "center": [
+        -0.1257,
+        -0.065,
+        0.00075
+      ],
+      "size": [
+        0.0146,
+        0.105,
+        0.1065
+      ]
+    }
+  ]
+}
